@@ -1,0 +1,14 @@
+/home/archi/Desktop/ConsoleApplication/bin/Debug/net8.0/ConsoleApplication
+/home/archi/Desktop/ConsoleApplication/bin/Debug/net8.0/ConsoleApplication.deps.json
+/home/archi/Desktop/ConsoleApplication/bin/Debug/net8.0/ConsoleApplication.runtimeconfig.json
+/home/archi/Desktop/ConsoleApplication/bin/Debug/net8.0/ConsoleApplication.dll
+/home/archi/Desktop/ConsoleApplication/bin/Debug/net8.0/ConsoleApplication.pdb
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.GeneratedMSBuildEditorConfig.editorconfig
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.AssemblyInfoInputs.cache
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.AssemblyInfo.cs
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.csproj.CoreCompileInputs.cache
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.dll
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/refint/ConsoleApplication.dll
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.pdb
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.genruntimeconfig.cache
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ref/ConsoleApplication.dll
