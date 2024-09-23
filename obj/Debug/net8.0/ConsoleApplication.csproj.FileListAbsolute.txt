@@ -12,3 +12,4 @@
 /home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.pdb
 /home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.genruntimeconfig.cache
 /home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ref/ConsoleApplication.dll
+/home/archi/Desktop/ConsoleApplication/obj/Debug/net8.0/ConsoleApplication.sourcelink.json
