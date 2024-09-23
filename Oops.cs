@@ -2,12 +2,11 @@ using System;
 
 namespace OOPExamples;
 
-    // Abstract class
     abstract class Animal
     {
         public abstract void Speak();
 
-        public virtual void Display() // Base Display method
+        public virtual void Display() 
         {
             Console.WriteLine("Animal display.");
         }
@@ -28,7 +27,7 @@ namespace OOPExamples;
         }
     }
 
-    // Derived class from Shape
+    
     class Circle : Shape
     {
         public override void Draw()
@@ -37,7 +36,7 @@ namespace OOPExamples;
         }
     }
 
-    // Another derived class from Shape
+    
     class Square : Shape
     {
         public override void Draw()
@@ -46,7 +45,7 @@ namespace OOPExamples;
         }
     }
 
-    // Derived class from Animal and implementing IMovable
+    
     class Dog : Animal, IMovable
     {
         public override void Speak()
@@ -59,13 +58,13 @@ namespace OOPExamples;
             Console.WriteLine("The dog runs.");
         }
 
-        public new void Display() // Method hiding
+        public new void Display() 
         {
             Console.WriteLine("Dog display.");
         }
     }
 
-    // Another derived class from Animal and implementing IMovable
+    
     class Cat : Animal, IMovable
     {
         public override void Speak()
@@ -81,7 +80,7 @@ namespace OOPExamples;
 
     class Person
     {
-        private string? name; // Marking name as nullable
+        private string? name; 
 
         public string? Name
         {
@@ -126,7 +125,7 @@ namespace OOPExamples;
             return value.ToString();
         }
 
-        // Method hiding
+        
         public virtual void Display()
         {
             Console.WriteLine("Calculator display.");
@@ -147,48 +146,48 @@ namespace OOPExamples;
     {
         static void Main(string[] args)
         {
-            // Demonstrating Shapes
+            
             Shape myShape;
             myShape = new Circle();
-            myShape.Draw(); // Outputs: Drawing a circle.
+            myShape.Draw(); 
 
             myShape = new Square();
-            myShape.Draw(); // Outputs: Drawing a square.
+            myShape.Draw(); 
 
             // Demonstrating Animals
             Animal myDog = new Dog();
-            myDog.Speak(); // Outputs: The dog barks.
-            ((IMovable)myDog).Move(); // Outputs: The dog runs.
-            myDog.Display(); // Outputs: Animal display. (because of polymorphism)
+            myDog.Speak();
+            ((IMovable)myDog).Move(); 
+            myDog.Display(); 
 
             Animal myCat = new Cat();
-            myCat.Speak(); // Outputs: The cat meows.
-            ((IMovable)myCat).Move(); // Outputs: The cat walks gracefully.
-            myCat.Display(); // Outputs: Animal display.
+            myCat.Speak(); 
+            ((IMovable)myCat).Move(); 
+            myCat.Display(); 
 
-            // Demonstrating Person class
+            
             Person person = new Person();
             person.Name = "Archi";
-            person.Introduce(); // Outputs: Hello, my name is Alice.
+            person.Introduce(); 
 
-            // Demonstrating Calculator
+            
             Calculator calc1 = new Calculator(10);
             Calculator calc2 = new Calculator(20);
-            Calculator result = calc1 + calc2; // Using overloaded operator
+            Calculator result = calc1 + calc2; 
 
-            Console.WriteLine($"Result of adding two calculators: {result}"); // Outputs: 30
-            Console.WriteLine(calc1.Add(3, 4)); // Outputs: 7
-            Console.WriteLine(calc1.Add(2.5, 3.5)); // Outputs: 6
+            Console.WriteLine($"Result of adding two calculators: {result}"); 
+            Console.WriteLine(calc1.Add(3, 4)); 
+            Console.WriteLine(calc1.Add(2.5, 3.5)); 
 
             ScientificCalculator sciCalc = new ScientificCalculator(15);
-            sciCalc.Display(); // Outputs: Scientific calculator display.
+            sciCalc.Display(); 
 
-            // Demonstrating hiding behavior
+            
             Dog dog = new Dog();
-            dog.Display(); // Outputs: Dog display.
+            dog.Display(); 
 
             Animal animalDog = dog;
-            animalDog.Display(); // Outputs: Animal display. (polymorphism)
+            animalDog.Display(); 
 
             Console.ReadLine();
         }
